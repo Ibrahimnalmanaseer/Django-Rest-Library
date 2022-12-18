@@ -67,3 +67,6 @@ class BookTest(APITestCase):
         url = reverse("book", args=[1])
         response = self.client.delete(url)
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+
+
+        
